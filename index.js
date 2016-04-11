@@ -2,7 +2,7 @@
 
   var cp = require('child_process'),
       fs = require('fs'),
-      _bin = cp.execSync('npm bin'),
+      _bin = './node_modules/.bin',
       gulpPath = fs.existsSync(_bin+'/gulp') ? _bin+'/gulp' : __dirname +  '/node_modules/.bin/gulp',
       spawn = cp.spawn,
       args = [
