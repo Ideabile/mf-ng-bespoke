@@ -15,6 +15,7 @@ var pkg = require('./package.json'),
     through = require('through'),
     opn = require('opn'),
     ghpages = require('gh-pages'),
+    isDist = process.argv.indexOf('serve') === -1,
     path = require('path'),
     origin = '',
     dest = 'dist'
