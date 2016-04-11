@@ -9,7 +9,7 @@
     "postinstall": "./node_modules/.bin/bower install --config.interactive=false",
     "start": "./node_modules/.bin/gulp --gulpfile=./Gulpfile.js serve"
   },
-  "devDependencies": {
+  "dependencies": {
     "bower": "^1.5.3",
     "bespoke": "^1.0.0",
     "bespoke-backdrop": "^1.0.0",
@@ -36,12 +36,10 @@
     "gulp-util": "^2.2.17",
     "insert-css": "^0.2.0",
     "opn": "^0.1.2",
-    "through": "^2.3.4"
+    "through": "^2.3.4",
+    "bespoke-theme-nebula": "^1.0.1"
   },
   "engines": {
     "node": ">=0.10.0"
-  },
-  "dependencies": {
-    "bespoke-theme-nebula": "^1.0.1"
   }
 }
