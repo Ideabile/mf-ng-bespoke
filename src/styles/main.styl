@@ -1,0 +1,98 @@
+// New to Stylus? Check out http://learnboost.github.io/stylus
+// Use modern CSS thanks to Autoprefixer: https://github.com/ai/autoprefixer
+
+// Import CSS from "node_modules" and "bower_components"
+// thanks to Stylus' "import css" and "paths" options
+
+@import 'prism/themes/prism-okaidia.css'
+@import './bg.css'
+// Check out "bower_components/prism/themes/" for available themes
+
+// BASIC COLORS
+$black= #1a1a1a
+$white= #fff;
+$grey= #616a73
+$subtitle= #79838e
+$light-grey= #F5F5F5;
+$blue= #2aaae1
+$error= #ed5937
+
+body {
+  font-size: 22px
+  line-height: 50px
+  background-color: $grey;
+  background-repeat: none;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 60px;
+  color: $white;
+  -webkit-font-smoothing: antialiased;
+}
+
+h2 {
+  color: $light-grey;
+}
+
+h3 {
+  color: $white;
+}
+
+.bespoke-parent {
+  background: $dark;
+}
+
+.bespoke-slide {
+  background: rgba(0,0,0,0.3);
+  width: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  height: 100%;
+
+  img {
+    position:relative;
+  }
+}
+
+.css-fuckup {
+  .css-include {
+    width 335px
+    height 84px
+  }
+  .css-overwrite {
+    width 432px
+    height auto
+  }
+}
+
+code {
+  font-size 16px
+}
+
+code[class*="language-"], pre[class*="language-"] {
+  line-height 26px
+}
+
+pre[class*="language-"] {
+    padding: 10px 20px;
+    margin: .5em 0;
+    overflow: auto;
+    border-radius: 3px;
+    background: #333 !important;
+}
+
+.bespoke-progress-bar {
+  background: url('/images/rainbow-line.jpg');
+}
+
+.italic{
+  font-style: italic;
+}
+
+.big{
+  font-size: 100px;
+  color: #000;
+}

@@ -1,0 +1,7 @@
+{
+  "name": "presentation-how-we-use-modular-sass-at-insided",
+  "version": "0.0.0",
+  "dependencies": {
+    "prism": "gh-pages"
+  }
+}
