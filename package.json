@@ -10,16 +10,19 @@
     "start": "./node_modules/.bin/gulp --gulpfile=./Gulpfile.js serve"
   },
   "dependencies": {
-    "bower": "^1.5.3",
     "bespoke": "^1.0.0",
     "bespoke-backdrop": "^1.0.0",
     "bespoke-bullets": "^1.0.0",
+    "bespoke-graphview": "git+https://github.com/Ideabile/bespoke-graphview.git",
     "bespoke-hash": "^1.0.0",
     "bespoke-keys": "^1.0.0",
     "bespoke-progress": "^1.0.0",
     "bespoke-scale": "^1.0.0",
     "bespoke-theme-cube": "^2.0.0",
+    "bespoke-theme-nebula": "^1.0.1",
+    "bespoke-timeview": "git+https://github.com/Ideabile/bespoke-timeview.git",
     "bespoke-touch": "^1.0.0",
+    "bower": "^1.5.3",
     "debowerify": "^0.7.1",
     "gh-pages": "^0.2.0",
     "gulp": "^3.8.1",
@@ -36,8 +39,7 @@
     "gulp-util": "^2.2.17",
     "insert-css": "^0.2.0",
     "opn": "^0.1.2",
-    "through": "^2.3.4",
-    "bespoke-theme-nebula": "^1.0.1"
+    "through": "^2.3.4"
   },
   "engines": {
     "node": ">=0.10.0"

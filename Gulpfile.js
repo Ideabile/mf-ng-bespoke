@@ -117,7 +117,7 @@ gulp.task('connect', ['build'], function(done) {
   connect.server({
     root: dest,
     livereload: true,
-    port: '8001'
+    port: '8002'
   });
 
   opn('http://localhost:8001', done);
@@ -125,11 +125,15 @@ gulp.task('connect', ['build'], function(done) {
 
 gulp.task('watch', function() {
   gulp.watch(['src/**/*.jade'], ['html']);
-  gulp.watch(['src/styles/**/*.styl', __dirname+'/src/style/**/*.css', __dirname+'/src/style/**/*.styl'], ['css']);
+  gulp.watch(['src/styles/**/*.styl', __dirname+'/src/styles/**/*.css', __dirname+'/src/styles/**/*.styl', 'node_modules/bespoke-*/**/*.css', __dirname+'/node_modules/bespoke-*/**/*.css'], ['css']);
   gulp.watch(['src/images/**/*'], ['images']);
   gulp.watch([
     __dirname+'/src/scripts/**/*.js',
     'src/scripts/**/*.js',
+    'node_modules/bespoke-*/**/*.js',
+    __dirname+'/node_modules/bespoke-*/**/*.js',
+    '!node_modules/bespoke-*/node_modules',
+    '!'+__dirname+'/node_modules/bespoke-*/node_modules',
     'bespoke-theme-*/dist/*.js' // Allow themes to be developed in parallel
   ], ['js']);
 });

@@ -8,7 +8,9 @@ var bespoke = require('bespoke'),
   backdrop = require('bespoke-backdrop'),
   scale = require('bespoke-scale'),
   hash = require('bespoke-hash'),
-  progress = require('bespoke-progress');
+  progress = require('bespoke-progress'),
+  timeview = require('bespoke-timeview'),
+  graphview = require('bespoke-graphview');
 
 // Bespoke.js
 bespoke.from('article', [
@@ -16,7 +18,9 @@ bespoke.from('article', [
   nebula(),
   keys(),
   touch(),
-  bullets('li, .bullet'),
+  bullets('ul:not(.diagram) li, .bullet'),
+  timeview('.timeview ol li'),
+  graphview(),
   scale(),
   hash(),
   progress(),
