@@ -6,7 +6,7 @@
     "mf-ng-bespoke": "./index.js"
   },
   "scripts": {
-    "postinstall": "./node_modules/.bin/bower install --config.interactive=false",
+    "postinstall": "./node_modules/.bin/bower --allow-root install --config.interactive=false",
     "start": "./node_modules/.bin/gulp --gulpfile=./Gulpfile.js serve"
   },
   "dependencies": {
