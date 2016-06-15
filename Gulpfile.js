@@ -44,7 +44,7 @@ var config = {
   },
   css: {
     src: __dirname+'/src/styles/main.styl',
-    paths: [ __dirname+'/node_modules', __dirname+'/bower_components' ]
+    paths: [ 'node_modules', 'bower_components', __dirname+'/node_modules', __dirname+'/bower_components' ]
   },
   images: [__dirname+'/src/images/**/*', origin+'src/images/**/*']
 };
