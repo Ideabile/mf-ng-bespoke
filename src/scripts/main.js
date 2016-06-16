@@ -14,13 +14,13 @@ var bespoke = require('bespoke'),
 
 // Bespoke.js
 bespoke.from('article', [
-  // cube(),
-  nebula(),
-  keys(),
-  touch(),
+  // cube(),,
   bullets('ul:not(.diagram) li, .bullet'),
   timeview('.timeview ol li'),
   graphview(),
+  keys(),
+  nebula(),
+  //touch(),
   scale(),
   hash(),
   progress(),
