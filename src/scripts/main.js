@@ -9,7 +9,7 @@ var bespoke = require('bespoke'),
   scale = require('bespoke-scale'),
   hash = require('bespoke-hash'),
   progress = require('bespoke-progress'),
-  //timeview = require('bespoke-timeview'),
+  timeview = require('bespoke-timeview'),
   graphview = require('bespoke-graphview');
 
 // Bespoke.js
